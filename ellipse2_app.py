@@ -36,13 +36,13 @@ def plot_ellipse(a_val, b_val):
 plot_placeholder = st.empty()
 
 # 動畫過渡 a, b
-steps = 20
+steps = 10
 for i in range(1, steps + 1):
     a_step = st.session_state.a_prev + (a - st.session_state.a_prev) * i / steps
     b_step = st.session_state.b_prev + (b - st.session_state.b_prev) * i / steps
     fig = plot_ellipse(a_step, b_step)
     plot_placeholder.pyplot(fig)
-    time.sleep(0.02)
+    time.sleep(0.05)
 
 # 儲存目前值以供下次使用
 st.session_state.a_prev = a

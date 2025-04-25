@@ -23,7 +23,7 @@ def plot_ellipse(a_val, b_val):
     theta = np.linspace(0, 2 * np.pi, 300)
     x = a_val * np.cos(theta)
     y = b_val * np.sin(theta)
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(4, 3))#預設為(6.4,4.8)
     ax.plot(x, y)
     ax.set_aspect('equal')
     ax.set_xlim(-6, 6)

@@ -42,7 +42,7 @@ for i in range(1, steps + 1):
     b_step = st.session_state.b_prev + (b - st.session_state.b_prev) * i / steps
     fig = plot_ellipse(a_step, b_step)
     plot_placeholder.pyplot(fig)
-    time.sleep(0.05)
+    time.sleep(0.1)
 
 # 儲存目前值以供下次使用
 st.session_state.a_prev = a

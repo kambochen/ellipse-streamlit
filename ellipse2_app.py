@@ -28,14 +28,14 @@ with col_b:
     b = st.slider("b 值", 1, 5, 2)
 
 # 更新公式（帶入數值）
-st.latex(fr"\frac{{x^2}}{{{a**2}}} + \frac{{y^2}}{{{b**2}}} = 1")
+#st.latex(fr"\frac{{x^2}}{{{a**2}}} + \frac{{y^2}}{{{b**2}}} = 1")
 
 # 畫圖函式（小尺寸）
 def plot_ellipse(a_val, b_val):
     theta = np.linspace(0, 2 * np.pi, 300)
     x = a_val * np.cos(theta)
     y = b_val * np.sin(theta)
-    fig, ax = plt.subplots(figsize=(3.5, 2.8))  # 更小尺寸
+    fig, ax = plt.subplots(figsize=(2.1, 1.8))  # 更小尺寸
     ax.plot(x, y)
     ax.set_aspect('equal')
     ax.set_xlim(-6, 6)

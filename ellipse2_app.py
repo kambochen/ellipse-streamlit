@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 
-st.title("動畫橢圓圖形")
+st.title("橢圓動態模擬圖形")
 
 # 初始化前一個值（用於動畫）
 if "a_prev" not in st.session_state:
@@ -42,7 +42,7 @@ for i in range(1, steps + 1):
     b_step = st.session_state.b_prev + (b - st.session_state.b_prev) * i / steps
     fig = plot_ellipse(a_step, b_step)
     plot_placeholder.pyplot(fig)
-    time.sleep(0.01)
+    time.sleep(0.02)
 
 # 儲存目前值以供下次使用
 st.session_state.a_prev = a

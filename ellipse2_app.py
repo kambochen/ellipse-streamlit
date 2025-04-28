@@ -35,13 +35,13 @@ def plot_ellipse(a_val, b_val):
     theta = np.linspace(0, 2 * np.pi, 300)
     x = a_val * np.cos(theta)
     y = b_val * np.sin(theta)
-    fig, ax = plt.subplots(figsize=(1.1, 0.8))  # 更小尺寸
+    fig, ax = plt.subplots(figsize=(0.9, 0.6))  # 更小尺寸
     ax.plot(x, y)
     ax.set_aspect('equal')
     ax.set_xlim(-6, 6)
     ax.set_ylim(-6, 6)
     ax.grid(True)
-    ax.tick_params(axis='both', labelsize=4)
+    ax.tick_params(axis='both', labelsize=2)
     #ax.set_title(f"x²/{a_val**2:.1f} + y²/{b_val**2:.1f} = 1", fontsize=10)
     return fig
 

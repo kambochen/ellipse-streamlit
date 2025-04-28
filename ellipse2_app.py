@@ -40,8 +40,8 @@ def plot_ellipse(a_val, b_val):
     ax.set_aspect('equal')
     ax.set_xlim(-6, 6)
     ax.set_ylim(-6, 6)
-    ax.grid(true)
-    ax.tick_params(axis='both', labelsize=3)
+    ax.grid(True)
+    ax.tick_params(axis='both', labelsize=2)
     #ax.set_title(f"x²/{a_val**2:.1f} + y²/{b_val**2:.1f} = 1", fontsize=10)
     return fig
 
